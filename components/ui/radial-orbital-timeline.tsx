@@ -28,11 +28,13 @@ export default function RadialOrbitalTimeline({ timelineData }: RadialOrbitalTim
   const [pulseEffect, setPulseEffect] = useState<Record<number, boolean>>({});
   const [activeNodeId, setActiveNodeId] = useState<number | null>(null);
   const [radius, setRadius] = useState<number>(160);
+  const [mounted, setMounted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const orbitRef = useRef<HTMLDivElement>(null);
   const nodeRefs = useRef<Record<number, HTMLDivElement | null>>({});
 
   useEffect(() => {
+    setMounted(true);
     const update = () => setRadius(window.innerWidth < 640 ? 110 : 160);
     update();
     window.addEventListener("resize", update);
@@ -129,6 +131,7 @@ export default function RadialOrbitalTimeline({ timelineData }: RadialOrbitalTim
           <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ${ringSize} rounded-full border border-white/8`} />
 
           {timelineData.map((item, index) => {
+            if (!mounted) return null;
             const pos = calculateNodePosition(index, timelineData.length);
             const isExpanded = expandedItems[item.id];
             const isRelated = activeNodeId ? getRelatedItems(activeNodeId).includes(item.id) : false;
@@ -138,7 +141,7 @@ export default function RadialOrbitalTimeline({ timelineData }: RadialOrbitalTim
             return (
               <div
                 key={item.id}
-                ref={(el) => (nodeRefs.current[item.id] = el)}
+                ref={(el) => { nodeRefs.current[item.id] = el; }}
                 className="absolute transition-all duration-700 cursor-pointer"
                 style={{
                   left: "50%",
