@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Creative Digital Agency",
+    "title": "We Craft Digital",
+    "titleHighlight": "Experiences",
+    "subtitle": "Demavio helps brands grow through stunning design, powerful development, and smart marketing strategies.",
+    "cta": "Get Started",
+    "ctaSecondary": "Our Work"
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "End-to-end digital solutions tailored for your business",
+    "items": [
+      {
+        "title": "Web Design",
+        "desc": "Beautiful, responsive websites that convert visitors into customers."
+      },
+      {
+        "title": "Brand Identity",
+        "desc": "Logos, colors, and visual systems that make your brand unforgettable."
+      },
+      {
+        "title": "Digital Marketing",
+        "desc": "Data-driven campaigns that grow your audience and revenue."
+      },
+      {
+        "title": "Video Production",
+        "desc": "Compelling video content that tells your story and engages your audience."
+      },
+      {
+        "title": "Social Media",
+        "desc": "Strategic social presence that builds community and drives engagement."
+      },
+      {
+        "title": "SEO & Analytics",
+        "desc": "Optimize your visibility and track what matters most."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Demavio",
+    "subtitle": "We are a passionate team of creatives and strategists dedicated to transforming your digital presence.",
+    "stats": [
+      { "value": "150+", "label": "Projects Delivered" },
+      { "value": "80+", "label": "Happy Clients" },
+      { "value": "5+", "label": "Years Experience" },
+      { "value": "15+", "label": "Team Members" }
+    ]
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Ready to take your brand to the next level? We'd love to hear from you.",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
