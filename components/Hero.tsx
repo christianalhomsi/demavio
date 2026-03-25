@@ -1,53 +1,60 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background glow */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background layers */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px]" />
-        <div className="absolute top-1/3 left-1/3 w-[300px] h-[300px] bg-cyan-500/15 rounded-full blur-[80px]" />
+        {/* Grid */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+          }}
+        />
+        {/* Glows */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-blue-600/15 blur-[130px]" />
+        <div className="absolute top-1/2 left-1/4 w-[350px] h-[350px] rounded-full bg-cyan-500/10 blur-[90px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-[250px] h-[250px] rounded-full bg-indigo-600/10 blur-[80px]" />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-        <span className="inline-block px-4 py-1.5 mb-6 text-xs font-medium rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
+        {/* Badge */}
+        <div className="badge mx-auto mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
           {t('badge')}
-        </span>
+        </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          {t('title')}{' '}
-          <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-700 bg-clip-text text-transparent">
-            {t('titleHighlight')}
-          </span>
+        {/* Heading */}
+        <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-6 leading-[1.05] tracking-tight">
+          <span className="text-white">{t('title')}</span>
+          <br />
+          <span className="grad-text">{t('titleHighlight')}</span>
         </h1>
 
-        <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
           {t('subtitle')}
         </p>
 
+        {/* CTAs */}
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="#contact"
-            className="flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/25"
-          >
-            {t('cta')} <ArrowRight size={18} />
+          <a href="#contact" className="btn-primary">
+            {t('cta')} <ArrowRight size={17} />
           </a>
-          <a
-            href="#services"
-            className="flex items-center gap-2 px-8 py-3.5 rounded-full border border-white/10 text-gray-300 hover:border-cyan-500/50 hover:text-cyan-400 transition-all"
-          >
-            <Play size={16} /> {t('ctaSecondary')}
+          <a href="#projects" className="btn-secondary">
+            {t('ctaSecondary')}
           </a>
         </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <div className="w-px h-12 bg-gradient-to-b from-transparent to-cyan-500" />
+        {/* Scroll hint */}
+        <div className="mt-20 flex flex-col items-center gap-2 text-gray-600 animate-bounce">
+          <ChevronDown size={20} />
+        </div>
       </div>
     </section>
   );
