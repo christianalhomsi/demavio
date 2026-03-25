@@ -3,6 +3,8 @@
     "home": "Home",
     "services": "Services",
     "about": "About",
+    "team": "Team",
+    "projects": "Projects",
     "contact": "Contact"
   },
   "hero": {
@@ -17,30 +19,12 @@
     "title": "What We Do",
     "subtitle": "End-to-end digital solutions tailored for your business",
     "items": [
-      {
-        "title": "Web Design",
-        "desc": "Beautiful, responsive websites that convert visitors into customers."
-      },
-      {
-        "title": "Brand Identity",
-        "desc": "Logos, colors, and visual systems that make your brand unforgettable."
-      },
-      {
-        "title": "Digital Marketing",
-        "desc": "Data-driven campaigns that grow your audience and revenue."
-      },
-      {
-        "title": "Video Production",
-        "desc": "Compelling video content that tells your story and engages your audience."
-      },
-      {
-        "title": "Social Media",
-        "desc": "Strategic social presence that builds community and drives engagement."
-      },
-      {
-        "title": "SEO & Analytics",
-        "desc": "Optimize your visibility and track what matters most."
-      }
+      { "title": "Web Design", "desc": "Beautiful, responsive websites that convert visitors into customers." },
+      { "title": "Brand Identity", "desc": "Logos, colors, and visual systems that make your brand unforgettable." },
+      { "title": "Digital Marketing", "desc": "Data-driven campaigns that grow your audience and revenue." },
+      { "title": "Video Production", "desc": "Compelling video content that tells your story and engages your audience." },
+      { "title": "Social Media", "desc": "Strategic social presence that builds community and drives engagement." },
+      { "title": "SEO & Analytics", "desc": "Optimize your visibility and track what matters most." }
     ]
   },
   "about": {
@@ -53,13 +37,32 @@
       { "value": "15+", "label": "Team Members" }
     ]
   },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "The talented people behind Demavio",
+    "members": [
+      { "name": "Christian Alhomsi", "role": "Founder & CEO" },
+      { "name": "Alex Johnson", "role": "Creative Director" },
+      { "name": "Sara Ahmed", "role": "Lead Developer" },
+      { "name": "Maya Khalil", "role": "Marketing Strategist" }
+    ]
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "A selection of work we're proud of",
+    "items": [
+      { "title": "Brand Refresh", "category": "Branding", "desc": "Complete visual identity overhaul for a leading tech startup." },
+      { "title": "E-Commerce Platform", "category": "Web Design", "desc": "Full-stack e-commerce solution with seamless UX." },
+      { "title": "Social Campaign", "category": "Marketing", "desc": "Viral social media campaign reaching 2M+ impressions." },
+      { "title": "Corporate Video", "category": "Video", "desc": "Award-winning corporate documentary for a Fortune 500 client." },
+      { "title": "SEO Overhaul", "category": "SEO", "desc": "300% organic traffic increase in 6 months." },
+      { "title": "Mobile App UI", "category": "UI/UX", "desc": "Intuitive mobile app design for a fintech company." }
+    ]
+  },
   "contact": {
     "title": "Let's Work Together",
-    "subtitle": "Ready to take your brand to the next level? We'd love to hear from you.",
-    "name": "Your Name",
-    "email": "Your Email",
-    "message": "Your Message",
-    "send": "Send Message"
+    "subtitle": "Ready to take your brand to the next level? Find us on social media.",
+    "follow": "Follow Us"
   },
   "footer": {
     "rights": "All rights reserved."
