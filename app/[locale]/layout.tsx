@@ -10,6 +10,10 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 export const metadata: Metadata = {
   title: 'Demavio | Creative Digital Agency',
   description: 'Demavio - Creative Digital Agency',
+  icons: {
+    icon: '/images/demavio.png',
+    apple: '/images/demavio.png',
+  },
 };
 
 export default async function LocaleLayout({

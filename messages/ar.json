@@ -30,6 +30,13 @@
   "about": {
     "title": "عن ديمافيو",
     "subtitle": "نحن فريق متحمس من المبدعين والاستراتيجيين المكرسين لتحويل حضورك الرقمي.",
+    "process": [
+      { "title": "التخطيط",    "date": "الخطوة 1", "content": "تخطيط المشروع وتحديد المتطلبات.",              "status": "completed"   },
+      { "title": "التصميم",    "date": "الخطوة 2", "content": "تصميم الواجهات وهندسة النظام.",               "status": "completed"   },
+      { "title": "التطوير",    "date": "الخطوة 3", "content": "تنفيذ الميزات الأساسية والاختبار.",            "status": "in-progress" },
+      { "title": "الاختبار",   "date": "الخطوة 4", "content": "اختبار المستخدم وضمان الجودة.",               "status": "pending"     },
+      { "title": "الإطلاق",    "date": "الخطوة 5", "content": "النشر النهائي وإطلاق المشروع.",              "status": "pending"     }
+    ],
     "stats": [
       { "value": "+150", "label": "مشروع منجز" },
       { "value": "+80", "label": "عميل سعيد" },
@@ -41,10 +48,10 @@
     "title": "فريقنا",
     "subtitle": "الأشخاص الموهوبون خلف ديمافيو",
     "members": [
-      { "name": "كريستيان الحمصي", "role": "المؤسس والرئيس التنفيذي" },
-      { "name": "أليكس جونسون", "role": "المدير الإبداعي" },
-      { "name": "سارة أحمد", "role": "مطورة رئيسية" },
-      { "name": "مايا خليل", "role": "استراتيجية تسويق" }
+      { "name": "كريستيان الحمصي", "role": "المؤسس والرئيس التنفيذي", "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/christianalhomsi", "linkedin": "https://linkedin.com/in/christianalhomsi" },
+      { "name": "هادي العضل", "role": "المدير الإبداعي", "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hadialadal", "linkedin": "https://linkedin.com/in/hadialadal" },
+      { "name": "حمزة البرهاني", "role": "مطور رئيسي", "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hamzaalburhani", "linkedin": "https://linkedin.com/in/hamzaalburhani" },
+      { "name": "ملهم ابراهيم", "role": "استراتيجي تسويق", "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/mulhamibrahim", "linkedin": "https://linkedin.com/in/mulhamibrahim" }
     ]
   },
   "projects": {

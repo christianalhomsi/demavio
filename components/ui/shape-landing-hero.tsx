@@ -85,29 +85,29 @@ function HeroGeometric({
       {/* Floating shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
-          delay={0.3} width={600} height={140} rotate={12}
+          delay={0.3} width={300} height={80} rotate={12}
           gradient="from-cyan-500/[0.12]"
-          className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
+          className="left-[-5%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
         <ElegantShape
-          delay={0.5} width={500} height={120} rotate={-15}
+          delay={0.5} width={260} height={70} rotate={-15}
           gradient="from-blue-500/[0.12]"
           className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
         />
         <ElegantShape
-          delay={0.4} width={300} height={80} rotate={-8}
+          delay={0.4} width={160} height={50} rotate={-8}
           gradient="from-indigo-500/[0.12]"
           className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
         />
         <ElegantShape
-          delay={0.6} width={200} height={60} rotate={20}
+          delay={0.6} width={120} height={40} rotate={20}
           gradient="from-cyan-400/[0.1]"
-          className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
+          className="right-[10%] md:right-[20%] top-[10%] md:top-[15%]"
         />
         <ElegantShape
-          delay={0.7} width={150} height={40} rotate={-25}
+          delay={0.7} width={90} height={30} rotate={-25}
           gradient="from-blue-400/[0.1]"
-          className="left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
+          className="left-[15%] md:left-[25%] top-[5%] md:top-[10%]"
         />
       </div>
 
@@ -158,12 +158,21 @@ function HeroGeometric({
               className="flex flex-wrap items-center justify-center gap-4"
             >
               {cta && (
-                <a href="#contact" className="btn-primary">
-                  {cta}
+                <a
+                  href="#contact"
+                  className="relative flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white overflow-hidden group"
+                  style={{ background: 'linear-gradient(135deg, rgba(6,182,212,0.2), rgba(37,99,235,0.2))', border: '1px solid rgba(6,182,212,0.3)' }}
+                >
+                  <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(135deg, rgba(6,182,212,0.35), rgba(37,99,235,0.35))' }} />
+                  <span className="relative">{cta}</span>
                 </a>
               )}
               {ctaSecondary && (
-                <a href="#projects" className="btn-secondary">
+                <a
+                  href="#projects"
+                  className="flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-white/50 transition-all duration-300 hover:text-white/80"
+                  style={{ border: '1px solid rgba(255,255,255,0.08)' }}
+                >
                   {ctaSecondary}
                 </a>
               )}

@@ -56,12 +56,24 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <button
             onClick={switchLocale}
-            className="px-3 py-1.5 rounded-lg text-xs font-medium border border-white/10 text-gray-400 hover:border-cyan-500/40 hover:text-cyan-400 transition-all"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 hover:border-cyan-500/40 hover:text-cyan-400"
+            style={{ border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(156,163,175,1)' }}
           >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
             {locale === 'en' ? 'عربي' : 'EN'}
           </button>
-          <a href="#contact" className="hidden md:flex btn-primary text-sm py-2 px-5">
-            {t('contact')}
+
+          {/* CTA */}
+          <a
+            href="#contact"
+            className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-white transition-all duration-300 relative overflow-hidden group"
+            style={{ background: 'linear-gradient(135deg, rgba(6,182,212,0.15), rgba(37,99,235,0.15))', border: '1px solid rgba(6,182,212,0.25)' }}
+          >
+            <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(135deg, rgba(6,182,212,0.25), rgba(37,99,235,0.25))' }} />
+            <span className="relative">{t('contact')}</span>
           </a>
           <button className="md:hidden text-gray-400 hover:text-white transition-colors" onClick={() => setOpen(!open)}>
             {open ? <X size={22} /> : <Menu size={22} />}

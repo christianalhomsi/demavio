@@ -30,6 +30,13 @@
   "about": {
     "title": "About Demavio",
     "subtitle": "We are a passionate team of creatives and strategists dedicated to transforming your digital presence.",
+    "process": [
+      { "title": "Planning",    "date": "Step 1", "content": "Project planning and requirements gathering.", "status": "completed"   },
+      { "title": "Design",      "date": "Step 2", "content": "UI/UX design and system architecture.",        "status": "completed"   },
+      { "title": "Development", "date": "Step 3", "content": "Core features implementation and testing.",    "status": "in-progress" },
+      { "title": "Testing",     "date": "Step 4", "content": "User testing and quality assurance.",          "status": "pending"     },
+      { "title": "Launch",      "date": "Step 5", "content": "Final deployment and release.",                "status": "pending"     }
+    ],
     "stats": [
       { "value": "150+", "label": "Projects Delivered" },
       { "value": "80+", "label": "Happy Clients" },
@@ -41,10 +48,10 @@
     "title": "Our Team",
     "subtitle": "The talented people behind Demavio",
     "members": [
-      { "name": "Christian Alhomsi", "role": "Founder & CEO" },
-      { "name": "Alex Johnson", "role": "Creative Director" },
-      { "name": "Sara Ahmed", "role": "Lead Developer" },
-      { "name": "Maya Khalil", "role": "Marketing Strategist" }
+      { "name": "Christian Alhomsi", "role": "Founder & CEO", "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/christianalhomsi", "linkedin": "https://linkedin.com/in/christianalhomsi" },
+      { "name": "Hadi Aladal", "role": "Creative Director", "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hadialadal", "linkedin": "https://linkedin.com/in/hadialadal" },
+      { "name": "Hamza Alburhani", "role": "Lead Developer", "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hamzaalburhani", "linkedin": "https://linkedin.com/in/hamzaalburhani" },
+      { "name": "Mulham Ibrahim", "role": "Marketing Strategist", "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/mulhamibrahim", "linkedin": "https://linkedin.com/in/mulhamibrahim" }
     ]
   },
   "projects": {
