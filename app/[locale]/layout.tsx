@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Cairo, Inter } from 'next/font/google';
+import { Marhey, Roboto_Slab } from 'next/font/google';
 import '../globals.css';
 
-const cairo = Cairo({ subsets: ['arabic'], variable: '--font-cairo' });
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const cairo = Marhey({ subsets: ['arabic'], variable: '--font-cairo', weight: ['300', '400', '500', '600', '700'] });
+const sora = Roboto_Slab({ subsets: ['latin'], variable: '--font-inter', weight: ['300', '400', '500', '600', '700', '800'] });
 
 export const metadata: Metadata = {
   title: 'Demavio | Creative Digital Agency',
@@ -34,7 +34,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={isAr ? 'rtl' : 'ltr'} style={{ overflowX: 'hidden' }} data-scroll-behavior="smooth">
-      <body className={`${cairo.variable} ${inter.variable} ${isAr ? 'font-cairo' : 'font-inter'} bg-[#02040a] text-white w-full overflow-x-hidden`}>
+      <body className={`${cairo.variable} ${sora.variable} ${isAr ? 'font-cairo' : 'font-inter'} bg-[#02040a] text-white w-full overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

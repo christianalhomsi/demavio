@@ -29,6 +29,7 @@
   },
   "about": {
     "title": "About Demavio",
+    "heading": "Who We Are",
     "subtitle": "We are a passionate team of creatives and strategists dedicated to transforming your digital presence.",
     "process": [
       { "title": "Planning",    "date": "Step 1", "content": "Project planning and requirements gathering.", "status": "completed"   },
@@ -48,10 +49,10 @@
     "title": "Our Team",
     "subtitle": "The talented people behind Demavio",
     "members": [
-      { "name": "Christian Alhomsi", "role": "Founder & CEO", "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/christianalhomsi", "linkedin": "https://linkedin.com/in/christianalhomsi" },
-      { "name": "Hadi Aladal", "role": "Creative Director", "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hadialadal", "linkedin": "https://linkedin.com/in/hadialadal" },
-      { "name": "Hamza Alburhani", "role": "Lead Developer", "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hamzaalburhani", "linkedin": "https://linkedin.com/in/hamzaalburhani" },
-      { "name": "Mulham Ibrahim", "role": "Marketing Strategist", "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/mulhamibrahim", "linkedin": "https://linkedin.com/in/mulhamibrahim" }
+      { "name": "Christian Alhomsi", "role": "Founder & CEO", "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/christianalhomsi", "linkedin": "https://www.linkedin.com/in/christian-alhomsi-507b7b2b1/" },
+      { "name": "Hadi Aladal", "role": "Creative Director", "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hadialadal", "linkedin": "https://www.linkedin.com/in/hadi-aladal-6807543b9/" },
+      { "name": "Hamza Alburhani", "role": "Lead Developer", "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/hamzaalburhani", "linkedin": "https://www.linkedin.com/in/hamza-albourhani-8021603ab/" },
+      { "name": "Mulham Ibrahim", "role": "Marketing Strategist", "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face", "whatsapp": "https://wa.me/mulhamibrahim", "linkedin": "https://www.linkedin.com/in/mulham-ibrahim-2021643ab/" }
     ]
   },
   "projects": {

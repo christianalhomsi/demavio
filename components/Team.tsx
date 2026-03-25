@@ -73,7 +73,7 @@ export default function Team() {
         <div className="relative flex items-center justify-center h-[400px] sm:h-[440px]">
 
           <button onClick={prev} aria-label={isRTL ? 'التالي' : 'Previous'} className="absolute left-0 z-10 top-1/2 -translate-y-1/2 shrink-0 w-9 h-9 rounded-full flex items-center justify-center border border-white/10 bg-white/3 hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all text-white/50 hover:text-white">
-            {isRTL ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
+            {isRTL ? <ChevronLeft size={18} /> : <ChevronLeft size={18} />}
           </button>
 
           <div className="flex items-center justify-center gap-4 w-full px-12">
@@ -96,7 +96,7 @@ export default function Team() {
           </div>
 
           <button onClick={next} aria-label={isRTL ? 'السابق' : 'Next'} className="absolute right-0 z-10 top-1/2 -translate-y-1/2 shrink-0 w-9 h-9 rounded-full flex items-center justify-center border border-white/10 bg-white/3 hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all text-white/50 hover:text-white">
-            {isRTL ? <ChevronLeft size={18} /> : <ChevronRight size={18} />}
+            {isRTL ? <ChevronRight size={18} /> : <ChevronRight size={18} />}
           </button>
         </div>
 

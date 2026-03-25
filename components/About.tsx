@@ -37,8 +37,13 @@ export default function About() {
           <div>
             <div className="section-label justify-start"><span>{t('title')}</span></div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white mb-4">
-              {t('subtitle')}
+              {t('heading')}
             </h2>
+            <div className="relative pl-4 border-l-2 border-cyan-500/40 mt-6">
+              <p className="text-white/55 text-base sm:text-lg leading-relaxed font-light">
+                {t('subtitle')}
+              </p>
+            </div>
             <div className="grid grid-cols-2 gap-3 mt-10">
               {stats.map((stat, i) => (
                 <div key={i} className="glass-card p-6 text-center">
