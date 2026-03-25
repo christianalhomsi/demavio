@@ -33,7 +33,7 @@ export default function Team() {
   useEffect(() => () => { if (timeout.current) clearTimeout(timeout.current); }, []);
 
   return (
-    <section id="team" className="py-20 sm:py-32 px-4 sm:px-6 relative overflow-hidden">
+    <section id="team" className="py-20 sm:py-32 px-5 sm:px-8 relative overflow-hidden">
       <div className="section-divider absolute top-0 inset-x-0" />
 
       <div className="absolute inset-0 pointer-events-none">
@@ -70,34 +70,32 @@ export default function Team() {
           </h2>
         </div>
 
-        <div className="relative flex items-center justify-center gap-4 sm:gap-6 h-[400px] sm:h-[440px]">
+        <div className="relative flex items-center justify-center h-[400px] sm:h-[440px]">
 
-          <button onClick={prev} className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center border border-white/10 bg-white/3 hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all text-white/50 hover:text-white z-10">
+          <button onClick={prev} aria-label={isRTL ? 'التالي' : 'Previous'} className="absolute left-0 z-10 top-1/2 -translate-y-1/2 shrink-0 w-9 h-9 rounded-full flex items-center justify-center border border-white/10 bg-white/3 hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all text-white/50 hover:text-white">
             {isRTL ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
           </button>
 
-          <div className="flex items-center justify-center gap-4 flex-1 overflow-hidden">
-            {/* Side left */}
-            <div className="hidden sm:block w-48 shrink-0 opacity-30 scale-90 transition-all duration-500">
+          <div className="flex items-center justify-center gap-4 w-full px-12">
+            <div className="hidden sm:block w-48 shrink-0 opacity-30 scale-90 transition-all duration-500 rounded-3xl overflow-hidden">
               <MemberCard member={members[getIndex(-1)]} />
             </div>
 
             {/* Active */}
             <div
               key={active}
-              className={`w-64 sm:w-72 shrink-0 ${animating ? (dir === 'right' ? 'slide-out-left' : 'slide-out-right') : ''}`}
+              className={`flex-1 sm:flex-none sm:w-72 rounded-3xl overflow-hidden ${animating ? (dir === 'right' ? 'slide-out-left' : 'slide-out-right') : ''}`}
               style={{ transition: 'opacity 0.3s, transform 0.3s' }}
             >
               <MemberCard member={members[active]} isActive />
             </div>
 
-            {/* Side right */}
-            <div className="hidden sm:block w-48 shrink-0 opacity-30 scale-90 transition-all duration-500">
+            <div className="hidden sm:block w-48 shrink-0 opacity-30 scale-90 transition-all duration-500 rounded-3xl overflow-hidden">
               <MemberCard member={members[getIndex(1)]} />
             </div>
           </div>
 
-          <button onClick={next} className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center border border-white/10 bg-white/3 hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all text-white/50 hover:text-white z-10">
+          <button onClick={next} aria-label={isRTL ? 'السابق' : 'Next'} className="absolute right-0 z-10 top-1/2 -translate-y-1/2 shrink-0 w-9 h-9 rounded-full flex items-center justify-center border border-white/10 bg-white/3 hover:border-cyan-400/40 hover:bg-cyan-400/5 transition-all text-white/50 hover:text-white">
             {isRTL ? <ChevronLeft size={18} /> : <ChevronRight size={18} />}
           </button>
         </div>
@@ -124,7 +122,7 @@ export default function Team() {
 function MemberCard({ member, isActive = false }: { member: Member; isActive?: boolean }) {
   return (
     <div
-      className={`relative p-5 text-center w-full rounded-2xl overflow-hidden ${isActive ? 'card-shimmer' : ''}`}
+      className={`relative p-5 text-center w-full rounded-3xl overflow-hidden ${isActive ? 'card-shimmer' : ''}`}
       style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)' }}
     >
       {isActive && (

@@ -15,7 +15,7 @@ export default function Projects() {
   const items = t.raw('items') as { title: string; category: string; desc: string }[];
 
   return (
-    <section id="projects" className="py-20 sm:py-32 px-4 sm:px-6 relative">
+    <section id="projects" className="py-20 sm:py-32 px-5 sm:px-8 relative">
       <div className="section-divider absolute top-0 inset-x-0" />
 
       <div className="absolute inset-0 pointer-events-none">

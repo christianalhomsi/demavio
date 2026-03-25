@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -28,8 +33,8 @@ export default async function LocaleLayout({
   const isAr = locale === 'ar';
 
   return (
-    <html lang={locale} dir={isAr ? 'rtl' : 'ltr'}>
-      <body className={`${cairo.variable} ${inter.variable} ${isAr ? 'font-cairo' : 'font-inter'} bg-gray-950 text-white`}>
+    <html lang={locale} dir={isAr ? 'rtl' : 'ltr'} style={{ overflowX: 'hidden' }} data-scroll-behavior="smooth">
+      <body className={`${cairo.variable} ${inter.variable} ${isAr ? 'font-cairo' : 'font-inter'} bg-[#02040a] text-white w-full overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

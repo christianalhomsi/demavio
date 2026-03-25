@@ -38,10 +38,10 @@
       { "title": "Launch",      "date": "Step 5", "content": "Final deployment and release.",                "status": "pending"     }
     ],
     "stats": [
-      { "value": "150+", "label": "Projects Delivered" },
-      { "value": "80+", "label": "Happy Clients" },
-      { "value": "5+", "label": "Years Experience" },
-      { "value": "15+", "label": "Team Members" }
+      { "value": "+3", "label": "Years Experience" },
+      { "value": "+10", "label": "Successful Projects" },
+      { "value": "+4", "label": "Team Members" },
+      { "value": "+10", "label": "Happy Clients" }
     ]
   },
   "team": {

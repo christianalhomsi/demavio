@@ -112,7 +112,7 @@ function HeroGeometric({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 md:px-6">
+      <div className="relative z-10 container mx-auto px-5 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div
